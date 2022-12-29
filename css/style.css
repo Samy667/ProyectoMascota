@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Hind+Siliguri:wght@300&family=Kanit:ital,wght@1,500&family=Nerko+One&family=Nunito+Sans:ital@1&family=Roboto:wght@100;300&display=swap');
+
+@import url('menu.css');
+@import url('banner.css');
+@import url(blog.css);
+@import url(info.css);
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; /*que el diseño no se deforme y siga dentro*/
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    position: fixed; /*el banner siempre va a estar ahí así bajes*/
+    top: 0;
+    left: 0;
+    z-index: 100; /*Trae adelante lo que indiques*/
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table; /*limpia estilo anteriores, pero puedo aplicar otros estilos*/
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/*Bienvenidos*/
+
+#bienvenidos{
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer .contenedor{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+
+}
+.copy{
+    font-size: 20px;
+}
+
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width:1024px){
+       .contenedor{
+        width: 1000px;
+       } 
+}
+
+
+@media (min-width:768px){
+    .sociales{
+     width: auto;
+    } 
+
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
